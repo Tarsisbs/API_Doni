@@ -5,8 +5,8 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "center",
-        marginTop: 8,
-        marginLeft: 10
+        marginTop: 20,
+        marginLeft: -110
       },
     
       textHeader: {

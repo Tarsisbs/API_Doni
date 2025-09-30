@@ -9,13 +9,7 @@ export default function Cabecalho(){
 
         <View style={styles.viewHeader}>
 
-            <TouchableOpacity>
-
-            <Feather style={{marginLeft: -70}} name='menu' size={36} color='#fff'/>
-
-            </TouchableOpacity>
-
-            <Text style={styles.textHeader}> TEC FILMES </Text>
+            <Text style={styles.textHeader}> DEMONDEX </Text>
 
         </View>
 

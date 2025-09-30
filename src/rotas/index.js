@@ -12,7 +12,7 @@ export default function Rotas(){
         <NavigationContainer>
             <stack.Navigator screenOptions = {{ headerShown:false,
                 headerStyle: {
-                backgroundColor: '#141a28',
+                backgroundColor: '#090909',
                 },
                 headerTintColor: 'white',
                 headerTitleStyle: {

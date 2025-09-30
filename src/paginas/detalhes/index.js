@@ -11,14 +11,15 @@ export default function Detalhes(){
             <View style={styles.containerView}>
 
                 <View style={styles.containerFilme}>
-                    <Image style={styles.images} source={{uri: (`https://image.tmdb.org/t/p/original/${route.params.imagem}`)}}/>
+                    <Image style={styles.images} source={route.params.imagem}/>
 
-                    <Text style={styles.titulo}>{route.params.titulo}</Text>
-                    <Text style={styles.titulo}> Lançamento: {route.params.lancamento}</Text>
-                    <Text style={styles.textNota}>Nota: ⭐{route.params.nota}</Text>
+                    <Text style={styles.titulo}>{route.params.nome}</Text>
+                    <Text style={styles.titulo}>Idade: {route.params.idade}</Text>
+                    <Text style={styles.textDesc}> Descrição: {route.params.descricao}</Text>
+                    <Text style={styles.textNota}>Gênero: {route.params.genero}</Text>
+                    <Text style={styles.textSinopse}> Frase de Efeito: {route.params.frase} </Text>
                 </View>
 
-                <Text style={styles.textSinopse}> Sinopse: {route.params.sinopse} </Text>
             </View>
         </ScrollView>
     )

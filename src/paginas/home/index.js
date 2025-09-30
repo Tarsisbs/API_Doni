@@ -23,12 +23,11 @@ export default function Home(){
 
                 <Banner/>
 
-                <Text style={styles.textBanner}>DEMONDEX</Text>
-
+                <Categoria/>
 
                 <TouchableOpacity onPress={()=> navigation.navigate('Desenvolvedores')}>
                   
-                  <Text style={styles.titulo}> Desenvolvedores </Text>
+                  <Text style={styles.tituloDesenvolvedores}> Desenvolvedores </Text>
 
                 </TouchableOpacity>
 

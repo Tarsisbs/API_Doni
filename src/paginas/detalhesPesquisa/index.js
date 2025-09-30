@@ -5,21 +5,21 @@ import styles from "./style";
 
 export default function DetalhesPesquisa(){
     const route = useRoute();
-    const { filme } = route.params;
+    const { personagens } = route.params;
     const navigation = useNavigation();
     return(
         <ScrollView style={styles.container}>
             <View style={styles.containerView}>
 
                 <View style={styles.containerFilme}>
-                    <Image style={styles.images} source={{uri: (`https://image.tmdb.org/t/p/original/${filme.poster_path}`)}}/>
+                    <Image style={styles.images} source={{uri:(`${personagens.img}`)}}/>
 
-                    <Text style={styles.titulo}>{filme.title}</Text>
-                    <Text style={styles.titulo}> Lançamento: {filme.release_date}</Text>
-                    <Text style={styles.textNota}>Nota: ⭐{filme.vote_average}</Text>
+                    <Text style={styles.titulo}>{personagens.name}</Text>
+                    <Text style={styles.titulo}>{personagens.age}</Text>
+                    <Text style={styles.titulo}> Descrição: {personagens.description}</Text>
+                    <Text style={styles.textNota}>Gênero: {personagens.gender}</Text>
                 </View>
-
-                <Text style={styles.textSinopse}> Sinopse: {filme.overview} </Text>
+                
             </View>
         </ScrollView>
     )

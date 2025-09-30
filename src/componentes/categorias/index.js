@@ -16,6 +16,8 @@ const Categoria = () => {
 
     const [personagem,setPersonagem] = useState([]);
 
+    const [estilo,setEstilo] = useState([]);
+
 
     useEffect(()=>{
         async function buscarPersonagem(){
@@ -46,7 +48,7 @@ const Categoria = () => {
                 renderItem={({item}) => (
 
                     <TouchableOpacity style={[styles.Categoria, categoriaSelecionada === item.nome && {
-                        backgroundColor: '#0a0b1fff',
+                        backgroundColor: '#090909',
                     }]} onPress={() => lidarCategoriaSelecionada(item.nome)}>
                         <Text style={[styles.nomeCategoria, categoriaSelecionada === item.nome && {
                             color: 'white'
@@ -65,16 +67,16 @@ const Categoria = () => {
 
                     <FlatList
 
-                      showsHorizontalScrollIndicator={false}
+                      showsVerticalScrollIndicator={false}
 
-                      horizontal = {true}
+                      horizontal = {false}
 
                       data = {personagem}
 
                       keyExtractor={(item) => item.id}
                       renderItem={({item}) => (
 
-                        <CardMovies nome = {item.name} raca = {item.race} genero = {item.gender} imagem = {item.img}/>
+                        <CardMovies nome = {item.name} idade = {item.age} frase = {item.quote} descricao = {item.description} raca = {item.race} genero = {item.gender} imagem = {item.img}/>
                       
                       )}
 

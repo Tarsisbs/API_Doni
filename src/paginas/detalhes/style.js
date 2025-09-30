@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#141a28',
+        backgroundColor: '#090909',
         width: '100%',
         height: '100%'
     },
@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     },
 
     containerFilme:{
-        backgroundColor:'#1C2B47',
+        backgroundColor:'#1e1e1e',
         padding: 15,
         display: 'flex',
         flexDirection: 'column',
@@ -39,12 +39,19 @@ const styles = StyleSheet.create({
     titulo:{
         color: '#fff',
         fontSize:25,
-        paddingTop:8
+        paddingTop:8,
+        textTransform:'uppercase'
+    },
+    textDesc:{
+        color: '#fff',
+        fontSize:20,
+        paddingTop:10
     },
     textNota:{
         fontSize:25,
         color: '#FFCC33',
-        paddingLeft:4
+        paddingLeft: 4,
+        paddingTop: 10
     },
     textSinopse:{
         fontSize:20,

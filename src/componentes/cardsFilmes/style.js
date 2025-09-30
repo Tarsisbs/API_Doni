@@ -2,43 +2,45 @@ import {StyleSheet} from "react-native";
 
 const styles = StyleSheet.create({
 
-    viewPrincipalFilmes:{
-        display:'flex',
-        gap:'20px',
-        flexDirection:'row',
-        marginLeft:'-93px',
-        marginBottom:'20px'
-    },
-
     viewFilmes:{
         display:'flex',
         flexDirection:'column',
         alignItems:'center',
-        backgroundColor: '#1C2B47',
+        backgroundColor: '#1e1e1e',
         padding:'15px',
         borderRadius: 10,
         marginBottom: '40px',
         marginRight: '20px',
-        width:'210px',
-        height:'430px'
+        width:'325px',
+        height:'480px',
+    },
+
+    viewText:{
+        backgroundColor: 'black',
+        color: 'white',
+        marginTop: '-20%',
+        width: '110%',
+        height: '15%'
     },
 
     titulo:{
-        fontWeight: 500,
+        fontWeight: 800,
         color: '#fff',
-        fontSize:17,
-        paddingTop:8,
-        marginBottom:20
+        fontSize: 25,
+        textTransform: 'uppercase',
+        paddingTop: 15,
+        marginLeft: '10px'
     },
-    textNota:{
-        fontSize:19,
-        color: '#FFCC33',
-        paddingLeft:4
-    },
+
     images:{
-        width:'170px',
-        height:270,
-        borderRadius:8
+        width:'300px',
+        height:470,
+        borderRadius:8,
+        elevation: 10,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 4 },
+        shadowOpacity: 0.3,
+        shadowRadius: 8,
     }
 })
 
